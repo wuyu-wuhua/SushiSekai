@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Sekai - Play Free Online Sushi Making Game | Best Japanese Food Game 2024</title>
+    <meta name="description" content="Experience the ultimate sushi-making adventure in Sushi Sekai! Create delicious Japanese dishes, master cooking techniques, and become a sushi master in this free online game.">
+    <link rel="canonical" href="https://qiyunhuagong.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-pink: #FF69B4;
+            --secondary-pink: #FFB6C1;
+            --accent-pink: #FFC0CB;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FFF5F7;
+        }
+        .cute-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .cute-card:hover {
+            transform: translateY(-5px);
+        }
+        .pink-gradient {
+            background: linear-gradient(135deg, var(--primary-pink), var(--secondary-pink));
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-pink);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .icon-circle {
+            width: 50px;
+            height: 50px;
+            background: var(--accent-pink);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Language Selector -->
+    <div class="fixed top-4 right-4 z-50">
+        <select id="languageSelector" class="bg-white rounded-full px-4 py-2 shadow-md border-2 border-pink-200 focus:border-pink-400 focus:outline-none">
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="es">Español</option>
+        </select>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-fish text-pink-500 text-3xl"></i>
+                    <h1 class="text-3xl font-bold text-pink-500 font-quicksand">Sushi Sekai</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#features" class="nav-link text-pink-500 hover:text-pink-600 transition-colors" data-translate="features">
+                        <i class="fas fa-star mr-1"></i> Features
+                    </a>
+                    <a href="#how-to-play" class="nav-link text-pink-500 hover:text-pink-600 transition-colors" data-translate="howToPlay">
+                        <i class="fas fa-gamepad mr-1"></i> How to Play
+                    </a>
+                    <a href="#strategy" class="nav-link text-pink-500 hover:text-pink-600 transition-colors" data-translate="strategy">
+                        <i class="fas fa-chess mr-1"></i> Strategy
+                    </a>
+                    <a href="#team" class="nav-link text-pink-500 hover:text-pink-600 transition-colors" data-translate="team">
+                        <i class="fas fa-users mr-1"></i> Team
+                    </a>
+                    <a href="#history" class="nav-link text-pink-500 hover:text-pink-600 transition-colors" data-translate="history">
+                        <i class="fas fa-history mr-1"></i> History
+                    </a>
+                    <a href="#reviews" class="nav-link text-pink-500 hover:text-pink-600 transition-colors" data-translate="reviews">
+                        <i class="fas fa-heart mr-1"></i> Reviews
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Game Section -->
+    <main>
+        <section class="game-container relative w-full h-screen bg-gradient-to-b from-pink-50 to-white">
+            <div class="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNMzAgMzBoMjB2MjBIMzB6IiBmaWxsPSIjRkZGNkY2Ii8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
+            <iframe src="https://play.wgplayground.com/ifr/3c21da808afd643405f8b1491e6199db" 
+                    class="w-full h-full"
+                    scrolling="no" 
+                    frameborder="0"
+                    allowfullscreen>
+            </iframe>
+            <button id="fullscreenBtn" class="absolute bottom-4 right-4 bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition-colors shadow-lg flex items-center space-x-2" data-translate="fullscreen">
+                <i class="fas fa-expand"></i>
+                <span>Fullscreen</span>
+            </button>
+        </section>
+
+        <!-- Game Screenshots -->
+        <section id="screenshots" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 text-pink-500">
+                    <i class="fas fa-images mr-4"></i>
+                    Game Screenshots
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="screenshot-card cute-card p-4">
+                        <div class="relative overflow-hidden rounded-xl">
+                            <img src="images/001.png" alt="Sushi Sekai gameplay screenshot" class="w-full h-64 object-cover rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-pink-500/20 to-transparent"></div>
+                        </div>
+                        <p class="mt-4 text-center text-gray-700">
+                            <i class="fas fa-sushi text-pink-500 mr-2"></i>
+                            Create beautiful sushi rolls
+                        </p>
+                    </div>
+                    <div class="screenshot-card cute-card p-4">
+                        <div class="relative overflow-hidden rounded-xl">
+                            <img src="images/002.png" alt="Sushi Sekai cooking gameplay" class="w-full h-64 object-cover rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-pink-500/20 to-transparent"></div>
+                        </div>
+                        <p class="mt-4 text-center text-gray-700">
+                            <i class="fas fa-utensils text-pink-500 mr-2"></i>
+                            Master cooking techniques
+                        </p>
+                    </div>
+                    <div class="screenshot-card cute-card p-4">
+                        <div class="relative overflow-hidden rounded-xl">
+                            <img src="images/003.png" alt="Sushi Sekai restaurant management" class="w-full h-64 object-cover rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-pink-500/20 to-transparent"></div>
+                        </div>
+                        <p class="mt-4 text-center text-gray-700">
+                            <i class="fas fa-store text-pink-500 mr-2"></i>
+                            Manage your sushi restaurant
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Features -->
+        <section id="features" class="py-16 bg-gradient-to-b from-white to-pink-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 text-pink-500">
+                    <i class="fas fa-star mr-4"></i>
+                    Game Features
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="feature-card cute-card p-6 text-center">
+                        <div class="icon-circle">
+                            <i class="fas fa-utensils text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-pink-500">Realistic Cooking</h3>
+                        <p class="text-gray-600">Experience authentic Japanese cooking techniques and recipes with adorable animations!</p>
+                    </div>
+                    <div class="feature-card cute-card p-6 text-center">
+                        <div class="icon-circle">
+                            <i class="fas fa-store text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-pink-500">Restaurant Management</h3>
+                        <p class="text-gray-600">Build and manage your own kawaii sushi restaurant empire with cute customers!</p>
+                    </div>
+                    <div class="feature-card cute-card p-6 text-center">
+                        <div class="icon-circle">
+                            <i class="fas fa-users text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-pink-500">Multiplayer Mode</h3>
+                        <p class="text-gray-600">Compete with friends in exciting cooking challenges with adorable rewards!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Strategy -->
+        <section id="strategy" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 text-pink-500" data-translate="gameStrategy">
+                    <i class="fas fa-book mr-4"></i>
+                    Game Strategy Guide
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="strategy-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500" data-translate="beginnersGuide">Beginner's Guide</h3>
+                        </div>
+                        <p class="mb-4 text-gray-600">Start with simple rolls like California rolls and cucumber rolls to build your confidence. Focus on perfecting the rice preparation - it's the foundation of all sushi!</p>
+                        <ul class="list-none pl-6 mb-4 space-y-2">
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check-circle text-pink-500 mr-2"></i>
+                                Keep your rice at the perfect temperature
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check-circle text-pink-500 mr-2"></i>
+                                Use the right amount of rice vinegar
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-check-circle text-pink-500 mr-2"></i>
+                                Practice your rolling technique
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="strategy-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-crown text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500" data-translate="advancedTechniques">Advanced Techniques</h3>
+                        </div>
+                        <p class="mb-4 text-gray-600">Once you've mastered the basics, try these advanced techniques to create more complex and beautiful sushi creations!</p>
+                        <ul class="list-none pl-6 mb-4 space-y-2">
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-star text-pink-500 mr-2"></i>
+                                Master the art of nigiri preparation
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-star text-pink-500 mr-2"></i>
+                                Learn to create decorative garnishes
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-star text-pink-500 mr-2"></i>
+                                Experiment with fusion flavors
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="strategy-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-chart-line text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500" data-translate="restaurantManagement">Restaurant Management Tips</h3>
+                        </div>
+                        <p class="mb-4 text-gray-600">Running a successful sushi restaurant requires more than just cooking skills. Here are some tips to help you manage your virtual restaurant effectively!</p>
+                        <ul class="list-none pl-6 space-y-2">
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-heart text-pink-500 mr-2"></i>
+                                Balance your menu with popular and specialty items
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-heart text-pink-500 mr-2"></i>
+                                Manage your inventory efficiently
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-heart text-pink-500 mr-2"></i>
+                                Train your staff to maintain quality
+                            </li>
+                            <li class="flex items-center text-gray-600">
+                                <i class="fas fa-heart text-pink-500 mr-2"></i>
+                                Create an inviting atmosphere for customers
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Team -->
+        <section id="team" class="py-16 bg-gradient-to-b from-pink-50 to-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 text-pink-500" data-translate="creativeTeam">
+                    <i class="fas fa-users mr-4"></i>
+                    Our Creative Team
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="team-card cute-card p-6 text-center">
+                        <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-pink-200 to-pink-400 overflow-hidden border-4 border-white shadow-lg flex items-center justify-center">
+                            <i class="fas fa-code text-6xl text-pink-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-pink-500">Yuki Tanaka</h3>
+                        <p class="text-gray-600 mb-4" data-translate="leadDeveloper">
+                            <i class="fas fa-code mr-2"></i>
+                            Lead Developer
+                        </p>
+                        <p class="text-sm text-gray-500">With over 10 years of game development experience, Yuki brings his passion for Japanese cuisine to this project.</p>
+                    </div>
+                    <div class="team-card cute-card p-6 text-center">
+                        <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-pink-200 to-pink-400 overflow-hidden border-4 border-white shadow-lg flex items-center justify-center">
+                            <i class="fas fa-palette text-6xl text-pink-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-pink-500">Sakura Yamamoto</h3>
+                        <p class="text-gray-600 mb-4" data-translate="artDirector">
+                            <i class="fas fa-palette mr-2"></i>
+                            Art Director
+                        </p>
+                        <p class="text-sm text-gray-500">Sakura's background in culinary arts and digital design creates the beautiful visuals that bring the game to life.</p>
+                    </div>
+                    <div class="team-card cute-card p-6 text-center">
+                        <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-pink-200 to-pink-400 overflow-hidden border-4 border-white shadow-lg flex items-center justify-center">
+                            <i class="fas fa-gamepad text-6xl text-pink-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-pink-500">Hiroshi Sato</h3>
+                        <p class="text-gray-600 mb-4" data-translate="gameDesigner">
+                            <i class="fas fa-gamepad mr-2"></i>
+                            Game Designer
+                        </p>
+                        <p class="text-sm text-gray-500">Hiroshi's innovative gameplay mechanics make cooking sushi both challenging and enjoyable for players of all skill levels.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game History -->
+        <section id="history" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 text-pink-500" data-translate="gameHistory">
+                    <i class="fas fa-history mr-4"></i>
+                    Game Development History
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="history-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-lightbulb text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="bg-pink-500 text-white px-4 py-2 rounded-full inline-block mb-2">January 2022</div>
+                                <h3 class="text-xl font-semibold text-pink-500" data-translate="ideaBorn">The Idea Was Born</h3>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">Our team came together with a vision to create a game that would celebrate Japanese cuisine while providing an engaging gaming experience!</p>
+                    </div>
+                    
+                    <div class="history-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-code-branch text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="bg-pink-500 text-white px-4 py-2 rounded-full inline-block mb-2">March 2022</div>
+                                <h3 class="text-xl font-semibold text-pink-500" data-translate="developmentBegins">Development Begins</h3>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">We started developing the core mechanics and creating the initial art assets for the game with a focus on cute and appealing visuals!</p>
+                    </div>
+                    
+                    <div class="history-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-vial text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="bg-pink-500 text-white px-4 py-2 rounded-full inline-block mb-2">August 2022</div>
+                                <h3 class="text-xl font-semibold text-pink-500" data-translate="alphaTesting">Alpha Testing</h3>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">The first playable version was released to a select group of testers who provided valuable feedback to help us improve the game!</p>
+                    </div>
+                    
+                    <div class="history-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-rocket text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="bg-pink-500 text-white px-4 py-2 rounded-full inline-block mb-2">December 2022</div>
+                                <h3 class="text-xl font-semibold text-pink-500" data-translate="betaRelease">Beta Release</h3>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">We expanded testing to a wider audience and implemented improvements based on player feedback to make the game even more enjoyable!</p>
+                    </div>
+                    
+                    <div class="history-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-flag text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="bg-pink-500 text-white px-4 py-2 rounded-full inline-block mb-2">March 2023</div>
+                                <h3 class="text-xl font-semibold text-pink-500" data-translate="officialLaunch">Official Launch</h3>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">The game was officially released to the public, receiving positive reviews and a growing player base of sushi enthusiasts!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Play -->
+        <section id="how-to-play" class="py-16 bg-gradient-to-b from-white to-pink-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 text-pink-500">
+                    <i class="fas fa-gamepad mr-4"></i>
+                    How to Play Sushi Sekai
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-play text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500">Getting Started</h3>
+                        </div>
+                        <p class="text-gray-600">Begin your journey as a sushi chef by selecting your favorite recipes and ingredients. Follow the step-by-step instructions to create perfect sushi rolls with cute animations!</p>
+                    </div>
+                    
+                    <div class="cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-keyboard text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500">Game Controls</h3>
+                        </div>
+                        <p class="text-gray-600">Use your mouse to select ingredients and drag them to the preparation area. Click to perform cooking actions and create your masterpiece with satisfying visual feedback!</p>
+                    </div>
+                    
+                    <div class="cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-trophy text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500">Scoring System</h3>
+                        </div>
+                        <p class="text-gray-600">Earn points based on your cooking speed, accuracy, and presentation. Unlock new recipes and ingredients as you progress, with adorable rewards and achievements!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- What Players Love -->
+        <section id="what-players-love" class="py-16 bg-gradient-to-b from-pink-50 to-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 text-pink-500" data-translate="whatPlayersLove">
+                    <i class="fas fa-heart mr-4"></i>
+                    What Players Love About Our Game
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="love-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-flag text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500" data-translate="authenticExperience">Authentic Japanese Experience</h3>
+                        </div>
+                        <p class="text-gray-600">Players appreciate the attention to detail in recreating authentic Japanese cooking techniques and ingredients. The game provides a genuine experience of sushi preparation with cute animations!</p>
+                    </div>
+                    <div class="love-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-spa text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500" data-translate="relaxingGameplay">Relaxing Gameplay</h3>
+                        </div>
+                        <p class="text-gray-600">Many players enjoy the calming nature of the game. The soothing music and satisfying cooking mechanics create a peaceful gaming experience with adorable visual feedback!</p>
+                    </div>
+                    <div class="love-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500" data-translate="educationalValue">Educational Value</h3>
+                        </div>
+                        <p class="text-gray-600">Players love learning about Japanese cuisine while having fun. The game teaches real cooking techniques and ingredient knowledge with engaging and cute tutorials!</p>
+                    </div>
+                    <div class="love-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-chart-line text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500" data-translate="progressionSystem">Progression System</h3>
+                        </div>
+                        <p class="text-gray-600">The rewarding progression system keeps players engaged. Unlocking new recipes, ingredients, and restaurant upgrades provides a sense of accomplishment with adorable rewards!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Players Love -->
+        <section id="why-players-love" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 text-pink-500" data-translate="whyPlayersLove">
+                    <i class="fas fa-star mr-4"></i>
+                    Why Players Love Our Game
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="reason-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-balance-scale text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500" data-translate="perfectBalance">Perfect Balance of Challenge and Fun</h3>
+                        </div>
+                        <p class="text-gray-600">The game offers just the right amount of challenge to keep players engaged without becoming frustrating. The learning curve is smooth, allowing players to improve their skills gradually with cute encouragements!</p>
+                    </div>
+                    
+                    <div class="reason-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-paint-brush text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500" data-translate="beautifulVisuals">Beautiful Visuals and Sound Design</h3>
+                        </div>
+                        <p class="text-gray-600">Players are captivated by the stunning visuals and immersive sound design. The attention to detail in the cooking animations and ambient restaurant sounds creates a truly engaging experience with kawaii elements!</p>
+                    </div>
+                    
+                    <div class="reason-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-sync text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500" data-translate="regularUpdates">Regular Updates and New Content</h3>
+                        </div>
+                        <p class="text-gray-600">Our commitment to regularly adding new recipes, ingredients, and features keeps the game fresh and exciting. Players appreciate the continuous support and new content with adorable surprises!</p>
+                    </div>
+                    
+                    <div class="reason-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="icon-circle mr-4">
+                                <i class="fas fa-users text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-pink-500" data-translate="communityFeatures">Community and Social Features</h3>
+                        </div>
+                        <p class="text-gray-600">The game's community features allow players to share their creations, compete with friends, and participate in special events. This social aspect enhances the overall gaming experience with cute interactions!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Player Reviews -->
+        <section id="reviews" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 text-pink-500">
+                    <i class="fas fa-comments mr-4"></i>
+                    What Players Say
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="review-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-pink-200 to-pink-400 overflow-hidden border-2 border-white shadow-md mr-4">
+                                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Sarah M." class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="font-semibold text-pink-500">Sarah M.</p>
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"This game is incredibly addictive! The cooking mechanics are so realistic and fun. I love the cute animations!"</p>
+                    </div>
+                    <div class="review-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-pink-200 to-pink-400 overflow-hidden border-2 border-white shadow-md mr-4">
+                                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John D." class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="font-semibold text-pink-500">John D.</p>
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"I love how I can learn about Japanese cuisine while having fun. The graphics are amazing and so kawaii!"</p>
+                    </div>
+                    <div class="review-card cute-card p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-pink-200 to-pink-400 overflow-hidden border-2 border-white shadow-md mr-4">
+                                <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Maria R." class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="font-semibold text-pink-500">Maria R.</p>
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic">"Best cooking game I've played in years. The multiplayer mode is fantastic and the rewards are so cute!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-pink-500 to-pink-600 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex justify-center space-x-4 mb-4">
+                    <a href="#" class="text-white hover:text-pink-200 transition-colors">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-pink-200 transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-pink-200 transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-pink-200 transition-colors">
+                        <i class="fab fa-discord text-xl"></i>
+                    </a>
+                </div>
+                <p class="mb-2">渝ICP备2025054314号</p>
+                <p class="mb-2">Contact Us: ytsgabcde0128@2925.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

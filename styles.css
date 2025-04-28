@@ -1,0 +1,152 @@
+/* Custom styles */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.game-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.screenshot-card, .feature-card, .review-card, .strategy-card, .team-card, .love-card, .reason-card {
+    transition: transform 0.3s ease;
+}
+
+.screenshot-card:hover, .feature-card:hover, .review-card:hover, .strategy-card:hover, .team-card:hover, .love-card:hover, .reason-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Language selector styles */
+#languageSelector {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+/* Timeline styles */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #f3f4f6;
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: #ec4899;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-date {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+/* Team card styles */
+.team-card img {
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Strategy card styles */
+.strategy-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Love card styles */
+.love-card {
+    border-left: 4px solid #ec4899;
+}
+
+/* Reason card styles */
+.reason-card {
+    border-left: 4px solid #8b5cf6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .game-container {
+        height: 50vh;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline-item {
+        padding-left: 0.5rem;
+    }
+    
+    .timeline-item::before {
+        left: -0.75rem;
+    }
+}
+
+/* Animation for cards */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.screenshot-card, .feature-card, .review-card, .strategy-card, .team-card, .love-card, .reason-card {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} 
